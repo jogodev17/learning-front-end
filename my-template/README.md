@@ -11,3 +11,9 @@ Currently, two official plugins are available:
 ```
 npm install
 ```
+
+## Run it with the following command
+
+```
+npm run dev
+```
