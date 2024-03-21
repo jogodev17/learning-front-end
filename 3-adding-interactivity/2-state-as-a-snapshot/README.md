@@ -71,3 +71,31 @@ return (
 ```
 
 ## Step 6: Test the Application After implementing the above steps, run your application and test the form. When you submit the form, it should display an alert after a 5-second delay, showing the message and the recipient’s name.
+
+## This code is a React component that represents a form for sending messages to either "Alice" or "Bob". Let's break it down step by step:
+
+### Importing useState Hook:
+
+useState is imported from the 'react' library. It's a React Hook that allows functional components to manage state.
+Defining the Form Component:
+
+Form is a functional component defined using ES6 syntax.
+State Initialization:
+
+Two state variables are initialized using the useState hook:
+to: Represents the recipient of the message, initialized with the value "Alice".
+message: Represents the message content, initialized with the value "Hello".
+handleSubmit Function:
+
+This function is called when the form is submitted.
+It prevents the default form submission behavior using e.preventDefault().
+It sets a timeout of 5 seconds using setTimeout. After 5 seconds, an alert is shown with the message content and the recipient.
+Return Statement (JSX):
+
+The return statement contains the JSX (JavaScript XML) code that represents the form.
+The form has an onSubmit attribute that calls the handleSubmit function when the form is submitted.
+Inside the form:
+There's a <label> element for selecting the recipient.
+Inside the label, there's a <select> element with options for "Alice" and "Bob". It's bound to the to state variable, and onChange, it updates the to state using setTo.
+There's a <textarea> element for entering the message. It's bound to the message state variable, and onChange, it updates the message state using setMessage.
+There's a <button> element for submitting the form with the text "Send".

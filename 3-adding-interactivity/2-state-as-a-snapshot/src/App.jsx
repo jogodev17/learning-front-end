@@ -1,12 +1,11 @@
 import { useState } from "react";
+import Form from "./components/Form";
 
 function App() {
-
-
     return (
         <>
             <main className="h-screen flex flex-col items-center justify-center">
-                <div></div>
+                <Form />
             </main>
         </>
     );
